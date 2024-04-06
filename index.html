@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="tittle">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="score my">
+                <div class="score_head">MY score</div>
+                <div class="score_num my_num">0</div>
+            </div>
+            <div class="score ai">
+                <div class="score_head">AI score</div>
+                <div class="score_num ai_num">0</div>
+            </div>
+        </header>
+
+        <section class="game">
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                    <img src="./images/icon-rock.svg" alt="rock">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="./images/icon-paper.svg" alt="paper">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="scissors">
+                <div class="choice scissors">
+                    <img src="./images/icon-scissors.svg" alt="scissors">
+                </div>
+            </button>
+        </section>
+    </div>
+
+    <section class="results hidden">
+        <h2 class="results-heading">you Picked</h2>
+        <h2 class="results-heading">AI Picked</h2>
+        <div class="results-result"></div>
+        <div class="results-winner hidden">
+          <h3 class="result-text"></h3>
+          <buttton class="play-again">Play Again</buttton>
+        </div>
+        <div class="results-result"></div>
+    
+    </section>
+
+
+    <button class="rules-btn" tabindex="1">Rules</button>
+    <div class="module">
+        <div class="module-container">
+            <div class="module-heading">
+                <h2 class="module-head">RULES</h2>
+                <button class="close-btn"><img src="./images/icon-close.svg" alt=""></button>
+            </div>
+            <img class="rules" src="./images/image-rules.svg" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <p class="text">Made by <span>Rishav Anand</span></p>
+    </footer>
+
+    <script src="./main.js" charset="UTF-8"></script>
+</body>
+</html>
