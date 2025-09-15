@@ -84,7 +84,7 @@ function displayWinner(results){
         }
         resultWinner.classList.toggle('hidden')
         resultsDiv.classList.toggle('show-winner')
-    },1000);
+    },0);
 }
 function isWinner(results){
     return results[0].beats===results[1].name;
